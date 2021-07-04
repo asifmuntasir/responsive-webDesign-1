@@ -30,16 +30,55 @@ window.addEventListener('scroll', scrollHeader);
 
 
 /*==================== SWIPER DISCOVER ====================*/
-let swiper = new Swiper(".discover__container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true,
-    spaceBetween: 32,
-    coverflowEffect: {
-        rotate: 0,
-    },
+// var swiper = new Swiper(".discover__container", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "auto",
+//     coverflowEffect: {
+//       rotate: 50,
+//       stretch: 0,
+//       depth: 100,
+//       modifier: 1,
+//       slideShadows: true,
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//     },
+//   });
+
+
+/*==================== VIDEO ====================*/
+const videoFile = document.getElementById('video-file');
+const videoButton = document.getElementById('video-button');
+const videoIcon = document.getElementById('video-icon');
+
+function playPause(){
+    if(videoFile.paused){
+        // Play Video
+        videoFile.play();
+
+        // Change the icon
+        videoIcon.classList.add('ri-pause-circle-line');
+        videoIcon.classList.remove('ri-play-circle-line');
+    }else{
+        videoFile.pause();
+        // Change the icon
+        videoIcon.classList.remove('ri-pause-line');
+        videoIcon.classList.add('ri-play-circle-line');
+    }
+}
+
+videoButton.addEventListener('click', function(){
+    playPause();
 });
+
+function finalVideo(){
+    // Video ends, icon change
+    videoIcon.classList.remove('ri-pause-line');
+    videoIcon.classList.add('ri-play-circle-line');
+}
+
+videoFile.addEventListener('ended', finalVideo);
 
 
