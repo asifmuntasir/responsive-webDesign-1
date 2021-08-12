@@ -1010,6 +1010,14 @@ input{
     padding-top: 2rem;
   }
 
+  .discover__card{
+    margin: var(--mb-0-25);
+  }
+
+  .discover__dashboard{
+    display: flex;
+  }
+
   .experience__overlay:nth-child(1){
     width: 363px;
     margin-right: 4rem;
@@ -1075,10 +1083,15 @@ input{
 
   .discover__card{
     width: 237px;
+    margin: var(--mb-0-5);
   }
 
   .discover__container{
-    width: 700px;
+    width: 100%;
+  }
+
+  .discover__dashboard{
+    display: flex;
   }
 
   .discover__data{
@@ -1126,4 +1139,23 @@ input{
     justify-content: center;
   }
 }
+
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
  
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px) {
+  body {
+    margin: 0;
+  }
+  .home__container, .home__img {
+    height: 640px;
+  }
+}
+
+

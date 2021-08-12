@@ -29,24 +29,6 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader);
 
 
-/*==================== SWIPER DISCOVER ====================*/
-// var swiper = new Swiper(".discover__container", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: "auto",
-//     coverflowEffect: {
-//       rotate: 50,
-//       stretch: 0,
-//       depth: 100,
-//       modifier: 1,
-//       slideShadows: true,
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//     },
-//   });
-
 
 /*==================== VIDEO ====================*/
 const videoFile = document.getElementById('video-file');
@@ -91,6 +73,7 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
@@ -109,7 +92,7 @@ function scrollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive);
 
 
 
@@ -142,3 +125,4 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
