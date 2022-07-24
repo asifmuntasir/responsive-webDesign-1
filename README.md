@@ -28,7 +28,7 @@ git clone https://github.com/asifmuntasir/responsive-webDesign-1.git using your 
 
 - GitHub: [AsifMuntasir](https://github.com/asifmuntasir)
 - LinkedIn: [AsifMuntasir](https://www.linkedin.com/in/asif-muntasir-shuaib/)
-- Website: [AsifMuntasir](asifmuntasir.github.io/)
+- Website: [AsifMuntasir](https://asifmuntasir.github.io/)
 
 
 ## 🤝 Contributing
